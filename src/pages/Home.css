@@ -5,16 +5,23 @@
 
 .home__top {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
 }
 .home__top h1 {
   font-family: "Inter";
-  font-size: 45px;
+  font-size: 50px;
   color: #fff;
+  background: -webkit-linear-gradient(45deg, #eee, #8d8383);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  font-weight: 900;
 }
 .home__top p {
   margin-top: 10px;
   color: #ffffff93;
+  font-family: "Inter";
+  font-weight: 400;
 }
 
 .home__top button {
@@ -38,10 +45,10 @@
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
+  margin-left: -40px;
 }
 .courses_animation {
-  animation: animate 30s linear infinite forwards;
-
+  animation: animate 30s linear infinite;
   display: block;
 }
 .mini_box {
@@ -56,11 +63,16 @@
   margin-left: 10px;
   margin-top: 10px;
   color: white;
+  transition: all 0.5s linear;
+}
+.mini_box:hover {
+  transform: scale(1.08);
 }
 
 .box1 {
   background-image: url("../assets/span.jpg");
 }
+
 .box2 {
   background-image: url("../assets/math.jpg");
 }
@@ -90,11 +102,12 @@
 .adri {
   margin-left: 30px;
 }
+
 @keyframes animate {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
 }

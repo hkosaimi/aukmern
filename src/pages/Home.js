@@ -7,13 +7,14 @@ function Home() {
           <h1>Built by students for students.</h1>
           <p>
             Auknotes is a community for students to help them success during
-            their college life.
+            their college life. Only AUK'res can view and participate, no
+            professors or tutors. Our journey just started.
           </p>
           <button>Explore</button>
         </div>
         <div className="home__middle">
           <div className="courses_animation">
-            <div className="mini_box box1"></div>
+            <span className="mini_box box1"></span>
             <div className="mini_box box2"></div>
             <div className="mini_box box3"></div>
             <div className="mini_box box4"></div>
