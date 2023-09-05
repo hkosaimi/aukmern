@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  user-select: none;
+}
+.navbar__left img {
+  width: 150px;
+}
+
+.navbar__right svg {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+}
+
+p {
+  color: #fff;
+}
+
+.links_container {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  font-size: 30px;
+  height: 100%;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  font-family: "Inter";
+  z-index: 9;
+}
+.links_container p:nth-child(1) {
+  margin-top: 80px;
+}

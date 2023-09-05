@@ -1,0 +1,100 @@
+.home {
+  margin-top: 50px;
+  height: 1000px;
+}
+
+.home__top {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.home__top h1 {
+  font-family: "Inter";
+  font-size: 45px;
+  color: #fff;
+}
+.home__top p {
+  margin-top: 10px;
+  color: #ffffff93;
+}
+
+.home__top button {
+  background: #04df75;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #000000;
+  margin-top: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 0 20px -2px #04df75;
+}
+.home__top button:hover {
+  box-shadow: 0 0 30px -2px #04df75;
+}
+
+.home__middle {
+  margin-top: 50px;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.courses_animation {
+  animation: animate 30s linear infinite forwards;
+
+  display: block;
+}
+.mini_box {
+  display: inline-block;
+  width: 90px;
+  height: 100px;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 20px black;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.box1 {
+  background-image: url("../assets/span.jpg");
+}
+.box2 {
+  background-image: url("../assets/math.jpg");
+}
+.box3 {
+  background-image: url("../assets/cpeg210.jpg");
+}
+.box4 {
+  background-image: url("../assets/recent1.png");
+}
+.box5 {
+  background-image: url("../assets/chem.jpg");
+}
+.box6 {
+  background-image: url("../assets/phys.jpg");
+}
+.box7 {
+  background-image: url("../assets/recent3.jpg");
+}
+.box8 {
+  background-image: url("../assets/csis230.jpg");
+}
+
+.mdri {
+  margin-left: 20px;
+}
+
+.adri {
+  margin-left: 30px;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
