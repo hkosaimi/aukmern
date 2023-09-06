@@ -21,11 +21,13 @@ function Home() {
                 <h2>Use our website to enhance your learning process.</h2>
                 <p>
                   Before you can view and participate in the website, you need
-                  to signup with you AUK email, to ensure that onlu students can
-                  haave access to experince the full, unlimited features.
+                  to signup with you AUK email, to ensure that only students can
+                  have access to experince the full, unlimited features.
                 </p>
-                <input type="email" placeholder="Email"></input>
-                <button>Submit</button>
+                <div className="input-container">
+                  <input type="email" placeholder="Email"></input>
+                  <button>Submit</button>
+                </div>
               </div>
             </div>
           </div>
