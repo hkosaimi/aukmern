@@ -10,6 +10,8 @@ const Links = () => (
     <p>Courses</p>
     <p>About</p>
     <p>Contact</p>
+    <button onClick={() => console.log("test")}>Log in</button>
+    <button onClick={() => console.log("test")}>Sign up</button>
   </>
 );
 
@@ -26,11 +28,18 @@ function Navbar() {
           {toggle ? (
             <RiMenu3Fill onClick={() => setToggle(false)} />
           ) : (
-            <AiOutlineClose onClick={() => setToggle(true)} />
+            <AiOutlineClose className="close" onClick={() => setToggle(true)} />
           )}
           {!toggle && (
             <div className="links_container">
-              <Links />
+              <p>Home</p>
+              <p>Courses</p>
+              <p>About</p>
+              <p>Contact</p>
+              <div className="button_container">
+                <button onClick={() => console.log("test")}>Log in</button>
+                <button onClick={() => console.log("test")}>Sign up</button>
+              </div>
             </div>
           )}
         </div>

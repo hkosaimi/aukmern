@@ -1,13 +1,13 @@
 .home {
   margin-top: 50px;
-  height: 1000px;
+  height: 2000px;
 }
 
-.home__top {
+.home__top__first {
   text-align: center;
   padding: 3rem 2rem;
 }
-.home__top h1 {
+.home__top__first h1 {
   font-family: "Inter";
   font-size: 50px;
   color: #fff;
@@ -17,31 +17,87 @@
   user-select: none;
   font-weight: 900;
 }
-.home__top p {
+.home__top__first p {
   margin-top: 10px;
   color: #ffffff93;
   font-family: "Inter";
   font-weight: 400;
 }
 
-.home__top button {
+.home__top__first button {
   background: #04df75;
-  padding: 10px 20px;
   border: none;
   outline: none;
-  border-radius: 25px;
+  box-shadow: 0 0 20px -2px #04df75;
+  padding: 10px 20px;
+  border-radius: 8px;
   color: #000000;
   margin-top: 50px;
   cursor: pointer;
   font-size: 18px;
-  box-shadow: 0 0 20px -2px #04df75;
 }
-.home__top button:hover {
+.home__top__first button:hover {
   box-shadow: 0 0 30px -2px #04df75;
 }
 
+.home__top__second {
+  padding: 3rem 2rem;
+}
+
+.home__top__second--card-container {
+  background: #000;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+  height: 300px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 700;
+  color: #fff;
+}
+.card p {
+  margin-top: 20px;
+  color: #ffffff93;
+  font-family: "Inter";
+  font-weight: 400;
+}
+.card input {
+  margin-top: 20px;
+  border: 0;
+  outline: 0;
+  padding: 10px 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  background: #222;
+}
+.card button {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #04df75;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 20px -2px #04df75;
+  font-size: 18px;
+}
+.card button:hover {
+  box-shadow: 0 0 30px -2px #04df75;
+}
+
+.card div {
+  text-align: center;
+  display: inline-block;
+  height: 30px;
+  width: 5px;
+  background: red;
+}
+
 .home__middle {
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -52,18 +108,20 @@
   display: block;
 }
 .mini_box {
+  overflow: hidden;
   display: inline-block;
-  width: 90px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 15px;
   background-position: center;
   background-size: cover;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 5px black;
   text-align: center;
   margin-left: 10px;
   margin-top: 10px;
   color: white;
-  transition: all 0.5s linear;
+  transition: transform 0.5s linear;
+  user-select: none;
 }
 .mini_box:hover {
   transform: scale(1.08);
@@ -103,7 +161,7 @@
   margin-left: 30px;
 }
 
-@keyframes animate {
+@keyframes animfate {
   0% {
     transform: translateX(0%);
   }
