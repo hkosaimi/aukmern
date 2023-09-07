@@ -20,18 +20,16 @@
 .links_container p {
   color: #000000;
   font-family: "Inter";
+  font-size: 25px;
   font-weight: 400;
 }
 
 .links_container {
-  position: absolute;
+  position: fixed;
   text-align: center;
   display: flex;
   flex-direction: column;
   row-gap: 60px;
-  font-size: 30px;
-  font-family: "Inter";
-  font-weight: 900;
   right: 0;
   background: rgb(210, 208, 208);
   z-index: 9;
@@ -62,9 +60,6 @@
 }
 .links_container button:hover {
   opacity: 0.8;
-}
-.links_container button:active {
-  transform: translateY(-5px);
 }
 
 .button_container {

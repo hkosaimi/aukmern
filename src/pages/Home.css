@@ -16,6 +16,7 @@
   -webkit-text-fill-color: transparent;
   user-select: none;
   font-weight: 900;
+  line-height: 50px;
 }
 .home__top__first p {
   margin-top: 10px;
@@ -102,7 +103,7 @@
 }
 
 .home__middle {
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -110,7 +111,6 @@
 }
 .courses_animation {
   animation: animate 30s linear infinite;
-  display: block;
 }
 .mini_box {
   overflow: hidden;
@@ -133,20 +133,22 @@
 }
 
 .box1 {
-  background-image: url("../assets/span.jpg");
+  background-image: url("../assets/eleg.jpg");
 }
 
 .box2 {
-  background-image: url("../assets/math.jpg");
+  background-image: url("../assets/phy.jpg");
+  background-position: 35% 35% !important;
 }
 .box3 {
   background-image: url("../assets/cpeg210.jpg");
 }
 .box4 {
-  background-image: url("../assets/recent1.png");
+  background-image: url("../assets/ch.jpg");
 }
 .box5 {
-  background-image: url("../assets/chem.jpg");
+  background-image: url("../assets/calc.jpg");
+  background-position: top !important;
 }
 .box6 {
   background-image: url("../assets/phys.jpg");

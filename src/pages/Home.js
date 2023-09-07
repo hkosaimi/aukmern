@@ -32,10 +32,17 @@ function Home() {
             </div>
           </div>
         </div>
+        <div
+          style={{ color: "#fff", fontFamily: "Inter", padding: "1rem 2rem" }}>
+          <h1>
+            We're providing a variety of resources to help you with your
+            classes.
+          </h1>
+        </div>
         <div className="home__middle">
           <motion.div
             className="courses_animation"
-            initial={{ scale: 1.5 }}
+            initial={{ scale: 2 }}
             whileInView={{ scale: 1 }}>
             <span className="mini_box box1"></span>
             <div className="mini_box box2"></div>
