@@ -3,17 +3,7 @@ import "./Navbar.css";
 import { RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-
-const Links = () => (
-  <>
-    <p>Home</p>
-    <p>Courses</p>
-    <p>About</p>
-    <p>Contact</p>
-    <button onClick={() => console.log("test")}>Log in</button>
-    <button onClick={() => console.log("test")}>Sign up</button>
-  </>
-);
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [toggle, setToggle] = useState(true);
@@ -37,8 +27,8 @@ function Navbar() {
               <p>About</p>
               <p>Contact</p>
               <div className="button_container">
-                <button onClick={() => console.log("test")}>Log in</button>
-                <button onClick={() => console.log("test")}>Sign up</button>
+                <Link to="/login">Log in</Link>
+                <Link to="/signup">Signup</Link>
               </div>
             </div>
           )}

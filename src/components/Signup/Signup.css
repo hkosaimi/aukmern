@@ -1,0 +1,45 @@
+.signup {
+  height: 100vh;
+  padding: 4rem 2rem;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+.signup h1 {
+  font-size: 25px;
+  font-family: "Poppins";
+}
+
+form {
+  font-size: 20px;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input {
+  padding: 10px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 20px;
+  background: rgb(210, 208, 208);
+}
+form label {
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+form button {
+  margin-top: 30px;
+  width: 80px;
+  padding: 10px 10px;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 7px;
+  background: #04df75;
+  box-shadow: 0 0 20px -2px #04df75;
+  cursor: pointer;
+}

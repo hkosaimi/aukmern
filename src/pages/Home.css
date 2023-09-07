@@ -27,9 +27,9 @@
 
 .home__top__first button {
   background: #04df75;
+  box-shadow: 0 0 20px -2px #04df75;
   border: none;
   outline: none;
-  box-shadow: 0 0 20px -2px #04df75;
   padding: 10px 20px;
   border-radius: 8px;
   color: #000000;

@@ -33,7 +33,13 @@ function Home() {
           </div>
         </div>
         <div
-          style={{ color: "#fff", fontFamily: "Inter", padding: "1rem 2rem" }}>
+          style={{
+            color: "#fff",
+            fontFamily: "Poppins",
+            fontWeight: "600",
+            padding: "1rem 2rem",
+            lineHeight: "40px",
+          }}>
           <h1>
             We're providing a variety of resources to help you with your
             classes.

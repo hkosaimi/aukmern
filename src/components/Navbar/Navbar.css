@@ -83,6 +83,7 @@
 }
 
 .close {
+  position: fixed !important;
   color: #000 !important;
 }
 

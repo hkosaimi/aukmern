@@ -1,18 +1,20 @@
-import { useEffect } from "react";
-function Signup() {
-  useEffect(() => {
-    const fetchUser = async (req, res) => {
-      const response = await fetchUser("/api/users");
-      const json = response.json();
+import "./Signup.css";
 
-      if (response.ok) {
-        dispatchEvent();
-      }
-    };
-  });
+function Signup() {
   return (
     <>
-      <div></div>
+      <div className="signup">
+        <h1>Signup</h1>
+        <form>
+          <label>Username</label>
+          <input type="text" />
+          <label>Email</label>
+          <input type="email" />
+          <label>Password</label>
+          <input type="password" />
+          <button>Signup</button>
+        </form>
+      </div>
     </>
   );
 }
