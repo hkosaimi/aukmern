@@ -17,13 +17,6 @@
   position: relative;
 }
 
-.links_container p {
-  color: #000000;
-  font-family: "Inter";
-  font-size: 25px;
-  font-weight: 400;
-}
-
 .links_container {
   position: fixed;
   text-align: center;
@@ -36,14 +29,21 @@
   top: 0;
   height: 100%;
   /*   width: 70%;
- */
+  */
   /*   padding: 5rem 4rem;
- */
+  */
   align-items: center;
   animation: slowly 1s ease forwards;
 }
 
-.links_container button {
+.links_container a {
+  color: #000000;
+  font-family: "Inter";
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.button_container a {
   padding: 10px 10px;
   width: 90px;
   border-radius: 10px;
@@ -86,6 +86,9 @@
   position: fixed !important;
   color: #000 !important;
 }
+.close_animated {
+  animation: slowlyreverse 1s ease forwards;
+}
 
 @keyframes slowly {
   0% {
@@ -94,5 +97,14 @@
   100% {
     width: 50%;
     padding: 5rem 4rem;
+  }
+}
+@keyframes slowlyreverse {
+  0% {
+    width: 50%;
+    padding: 5rem 4rem;
+  }
+  100% {
+    width: 0%;
   }
 }

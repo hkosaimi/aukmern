@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [toggle, setToggle] = useState(true);
+  const [closeAni, setCloseAni] = useState("");
+
   return (
     <>
       <div className="navbar">
@@ -22,16 +24,23 @@ function Navbar() {
           )}
           {!toggle && (
             <div className="links_container">
-              <p>Home</p>
-              <p>Courses</p>
-              <p>About</p>
-              <p>Contact</p>
+              <Link to="/" onClick={() => setToggle(true)}>
+                Home
+              </Link>
+              <Link onClick={() => setToggle(true)}>Courses</Link>
+              <Link onClick={() => setToggle(true)}>About</Link>
+              <Link onClick={() => setToggle(true)}>Contact</Link>
               <div className="button_container">
-                <Link to="/login">Log in</Link>
-                <Link to="/signup">Signup</Link>
+                <Link to="/login" onClick={() => setToggle(true)}>
+                  Log in
+                </Link>
+                <Link to="/signup" onClick={() => setToggle(true)}>
+                  Signup
+                </Link>
               </div>
             </div>
           )}
+          {toggle && <div className="links_container close_animated"></div>}
         </div>
       </div>
     </>
