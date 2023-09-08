@@ -55,3 +55,12 @@ form button {
 form button:hover {
   box-shadow: 0 0 30px -2px #04df75;
 }
+
+.error {
+  padding: 5px 5px;
+  color: red;
+  font-size: 17px;
+  font-family: "arial";
+  margin-top: 20px;
+  border: 1px solid red;
+}
