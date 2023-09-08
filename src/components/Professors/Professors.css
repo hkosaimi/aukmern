@@ -1,20 +1,19 @@
 .professor {
   display: flex;
-  flex-direction: column;
-  padding: 2rem 2rem;
-  border-radius: 10px;
-  width: 90%;
-  margin: auto;
-  row-gap: 20px;
+  flex-direction: row;
+  height: 250px;
+  overflow: hidden;
+  margin-left: -50px;
 }
 
 .prof-container {
   display: flex;
-  column-gap: 20px;
   flex-direction: row;
+  animation: animate 20s linear infinite;
 }
 
 .prof {
+  margin-left: 20px;
   width: 170px;
   height: 220px;
   background: #2a2929;
@@ -78,4 +77,13 @@
   font-family: "Pirata One";
   line-height: 30px;
   font-size: 35px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

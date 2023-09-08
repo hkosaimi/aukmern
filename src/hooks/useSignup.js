@@ -3,12 +3,13 @@ import { AuthContext } from "../context/AuthContext";
 import { useContext } from "react";
 
 export const useSignup = () => {
+  const [isLoading, setIsLoading] = useState(null);
   const [error, setError] = useState(null);
   const { dispatch } = useContext(AuthContext);
 
   const signup = async (username, email, password) => {
     setError(null);
-
+    setIsLoading(true);
     const response = await fetch("/api/users/signup", {
       method: "POST",
       headers: {
@@ -25,10 +26,12 @@ export const useSignup = () => {
 
     if (!response.ok) {
       setError(json.error);
+      setIsLoading(false);
     }
     if (response.ok) {
       dispatch({ type: "LOGIN", payload: json });
+      setIsLoading(false);
     }
   };
-  return { signup, error };
+  return { signup, error, isLoading };
 };
