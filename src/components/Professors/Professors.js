@@ -1,4 +1,5 @@
 import "./Professors.css";
+import { GiClubs, GiSpades, GiHearts, GiDiamonds } from "react-icons/gi";
 function Professors() {
   return (
     <>
@@ -7,10 +8,10 @@ function Professors() {
           <div className="prof">
             <div className="prof_top-left">
               <h1>A</h1>
-              <div></div>
+              <GiDiamonds />
             </div>
             <div className="prof_top-right">
-              <div></div>
+              <GiDiamonds />
               <h1>A</h1>
             </div>
             <div className="prof_top-middle">
@@ -19,27 +20,30 @@ function Professors() {
           </div>
           <div className="prof">
             <div className="prof_top-left">
-              <h1>A</h1>
-              <div></div>
+              <h1>K</h1>
+              <GiClubs />
             </div>
             <div className="prof_top-right">
-              <div></div>
-              <h1>A</h1>
+              <GiClubs />
+              <h1>K</h1>
             </div>
             <div className="prof_top-middle">
               <h1>Mounib Khanfar</h1>
+            </div>
+            <div className="prof_top-mdri">
+              <p></p>
             </div>
           </div>
         </div>
         <div className="prof-container">
           <div className="prof">
             <div className="prof_top-left">
-              <h1>A</h1>
-              <div></div>
+              <h1>J</h1>
+              <GiSpades />
             </div>
             <div className="prof_top-right">
-              <div></div>
-              <h1>A</h1>
+              <GiSpades />
+              <h1>J</h1>
             </div>
             <div className="prof_top-middle">
               <h1>Ahmad Meilod</h1>
@@ -48,10 +52,10 @@ function Professors() {
           <div className="prof">
             <div className="prof_top-left">
               <h1>A</h1>
-              <div></div>
+              <GiHearts />
             </div>
             <div className="prof_top-right">
-              <div></div>
+              <GiHearts />
               <h1>A</h1>
             </div>
             <div className="prof_top-middle">
@@ -63,10 +67,10 @@ function Professors() {
           <div className="prof">
             <div className="prof_top-left">
               <h1>A</h1>
-              <div></div>
+              <GiDiamonds />
             </div>
             <div className="prof_top-right">
-              <div></div>
+              <GiDiamonds />
               <h1>A</h1>
             </div>
             <div className="prof_top-middle">
