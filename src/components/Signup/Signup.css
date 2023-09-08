@@ -17,6 +17,9 @@
 .form_container h1 {
   font-size: 25px;
   font-family: "Poppins";
+  background: -webkit-linear-gradient(45deg, #eee, #8d8383);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 form {
@@ -53,6 +56,9 @@ form button {
   color: #000000;
 }
 form button:hover {
+  box-shadow: 0 0 30px -2px #04df75;
+}
+form button:active {
   box-shadow: 0 0 30px -2px #04df75;
 }
 
