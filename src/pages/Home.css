@@ -1,6 +1,6 @@
 .home {
   margin-top: 50px;
-  height: 1500px;
+  height: 2000px;
 }
 
 .home__top__first {
@@ -108,9 +108,9 @@
   white-space: nowrap;
   overflow: hidden;
   margin-left: -40px;
+  margin-bottom: 90px;
 }
 .courses_animation {
-  animation: animate 30s linear infinite;
 }
 .mini_box {
   overflow: hidden;
@@ -168,7 +168,27 @@
   margin-left: 30px;
 }
 
-@keyframes animfate {
+.home__bottom {
+  margin-top: 30px;
+  color: #fff;
+}
+.prof-carousel-contanier {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.prof-carousel {
+  display: inline-block;
+
+  animation: animate 30s linear infinite;
+}
+.prof-carousel p {
+  font-size: 30px;
+  font-family: "Pirata One";
+  display: inline-block;
+  margin-right: 20px;
+}
+
+@keyframes animaste {
   0% {
     transform: translateX(0%);
   }

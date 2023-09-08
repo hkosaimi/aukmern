@@ -22,16 +22,12 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  row-gap: 60px;
+  row-gap: 40px;
   right: 0;
   background: rgb(210, 208, 208);
   z-index: 9;
   top: 0;
   height: 100%;
-  /*   width: 70%;
-  */
-  /*   padding: 5rem 4rem;
-  */
   align-items: center;
   animation: slowly 1s ease forwards;
 }
@@ -40,8 +36,15 @@
   color: #000000;
   font-family: "Inter";
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
+  transition: opacity 0.5s;
+}
+.links_container a:nth-child(1) {
+  margin-top: 20px;
+}
+.links_container a:hover {
+  opacity: 0.7;
 }
 .button_container a {
   padding: 10px 10px;

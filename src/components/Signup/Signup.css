@@ -37,6 +37,7 @@ form input {
   color: #000000;
   font-size: 15px;
   background: rgb(210, 208, 208);
+  box-shadow: 0 5px 20px 1px rgb(0, 0, 0);
 }
 form label {
   margin-bottom: 5px;

@@ -1,5 +1,6 @@
 import "./Home.css";
 import { motion } from "framer-motion";
+import Professors from "../components/Professors/Professors";
 
 function Home() {
   return (
@@ -109,6 +110,26 @@ function Home() {
             <div className="mini_box box7"></div>
             <div className="mini_box box4"></div>
           </motion.div>
+        </div>
+        <div className="home__bottom">
+          {/*  <div className="prof-carousel-contanier">
+            <div className="prof-carousel">
+              <p>Aaron Rababh</p>
+              <p>mohd jasim</p>
+              <p>Hussain osa</p>
+            </div>
+            <div className="prof-carousel">
+              <p>Aaron Rababh</p>
+              <p>mohd jasim</p>
+              <p>Hussain osa</p>
+            </div>
+            <div className="prof-carousel">
+              <p>Aaron Rababh</p>
+              <p>mohd jasim</p>
+              <p>Hussain osa</p>
+            </div>
+          </div> */}
+          <Professors />
         </div>
       </div>
     </>
