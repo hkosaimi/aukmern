@@ -7,8 +7,16 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [toggle, setToggle] = useState(true);
-  const [closeAni, setCloseAni] = useState("");
+  const [active, setActive] = useState(false);
 
+  function handleOpen() {
+    setToggle(false);
+    setActive(false);
+  }
+  function handleClose() {
+    setToggle(true);
+    setActive(true);
+  }
   return (
     <>
       <div className="navbar">
@@ -18,29 +26,29 @@ function Navbar() {
         <div className="navbar__middle"></div>
         <div className="navbar__right">
           {toggle ? (
-            <RiMenu3Fill onClick={() => setToggle(false)} />
+            <RiMenu3Fill onClick={handleOpen} />
           ) : (
-            <AiOutlineClose className="close" onClick={() => setToggle(true)} />
+            <AiOutlineClose className="close" onClick={handleClose} />
           )}
           {!toggle && (
             <div className="links_container">
-              <Link to="/" onClick={() => setToggle(true)}>
+              <Link to="/" onClick={handleClose}>
                 Home
               </Link>
-              <Link onClick={() => setToggle(true)}>Courses</Link>
-              <Link onClick={() => setToggle(true)}>About</Link>
-              <Link onClick={() => setToggle(true)}>Contact</Link>
+              <Link onClick={handleClose}>Courses</Link>
+              <Link onClick={handleClose}>About</Link>
+              <Link onClick={handleClose}>Contact</Link>
               <div className="button_container">
-                <Link to="/login" onClick={() => setToggle(true)}>
+                <Link to="/login" onClick={handleClose}>
                   Log in
                 </Link>
-                <Link to="/signup" onClick={() => setToggle(true)}>
+                <Link to="/signup" onClick={handleClose}>
                   Signup
                 </Link>
               </div>
             </div>
           )}
-          {toggle && <div className="links_container close_animated"></div>}
+          {active && <div className="links_container close_animated"></div>}
         </div>
       </div>
     </>
