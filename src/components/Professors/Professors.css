@@ -64,7 +64,7 @@
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
 }
 
-.prof_top-middle {
+.prof_middle {
   position: absolute;
   display: flex;
   top: 50%;
@@ -72,7 +72,7 @@
   transform: translate(-50%, -50%);
 }
 
-.prof_top-middle h1 {
+.prof_middle h1 {
   background: -webkit-linear-gradient(45deg, #eee, #8d8383);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,7 +83,7 @@
  */
 }
 
-.prof_top-mdri {
+.prof_bottom {
   font-family: "Poppins";
   line-height: 15px;
   text-align: start;

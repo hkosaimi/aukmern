@@ -33,102 +33,81 @@ function Home() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            color: "#fff",
-            fontFamily: "Poppins",
-            fontWeight: "600",
-            padding: "1rem 2rem",
-            lineHeight: "40px",
-          }}>
-          <h1>
-            We're providing a variety of resources to help you with your
-            classes.
-          </h1>
-        </div>
+
         <div className="home__middle">
-          <motion.div
-            className="courses_animation"
-            initial={{ scale: 2 }}
-            whileInView={{ scale: 1 }}>
-            <span className="mini_box box1"></span>
-            <div className="mini_box box2"></div>
-            <div className="mini_box box3"></div>
-            <div className="mini_box box4"></div>
-            <div className="mini_box box5"></div>
-            <div className="mini_box box6"></div>
-            <div className="mini_box box7"></div>
-            <div className="mini_box box8"></div>
-            <div className="mini_box box1"></div>
-            <div className="mini_box box2"></div>
-            <div className="mini_box box3"></div>
-            <div className="mini_box box4"></div>
-            <div className="mini_box box5"></div>
-            <div className="mini_box box6"></div>
-            <div className="mini_box box7"></div>
-            <div className="mini_box box8"></div>
-          </motion.div>
-          <motion.div
-            className="courses_animation mdri"
-            initial={{ scale: 1.5 }}
-            whileInView={{ scale: 1 }}>
-            <div className="mini_box box5"></div>
-            <div className="mini_box box4"></div>
-            <div className="mini_box box2"></div>
-            <div className="mini_box box1"></div>
-            <div className="mini_box box3"></div>
-            <div className="mini_box box8"></div>
-            <div className="mini_box box6"></div>
-            <div className="mini_box box7"></div>
-            <div className="mini_box box1"></div>
-            <div className="mini_box box5"></div>
-            <div className="mini_box box3"></div>
-            <div className="mini_box box4"></div>
-            <div className="mini_box box6"></div>
-            <div className="mini_box box8"></div>
-            <div className="mini_box box7"></div>
-            <div className="mini_box box2"></div>
-          </motion.div>
-          <motion.div
-            className="courses_animation adri"
-            initial={{ scale: 1.5 }}
-            whileInView={{ scale: 1 }}>
-            <div className="mini_box box5"></div>
-            <div className="mini_box box3"></div>
-            <div className="mini_box box4"></div>
-            <div className="mini_box box2"></div>
-            <div className="mini_box box1"></div>
-            <div className="mini_box box8"></div>
-            <div className="mini_box box6"></div>
-            <div className="mini_box box2"></div>
-            <div className="mini_box box1"></div>
-            <div className="mini_box box2"></div>
-            <div className="mini_box box3"></div>
-            <div className="mini_box box4"></div>
-            <div className="mini_box box5"></div>
-            <div className="mini_box box1"></div>
-            <div className="mini_box box7"></div>
-            <div className="mini_box box4"></div>
-          </motion.div>
+          <div className="home__middle-top">
+            <h1>
+              We're providing a variety of resources to guide you throughout
+              your semester
+            </h1>
+          </div>
+          <div className="courses_container">
+            <motion.div
+              className="courses_animation"
+              initial={{ scale: 2 }}
+              whileInView={{ scale: 1 }}>
+              <span className="mini_box box1"></span>
+              <div className="mini_box box2"></div>
+              <div className="mini_box box3"></div>
+              <div className="mini_box box4"></div>
+              <div className="mini_box box5"></div>
+              <div className="mini_box box6"></div>
+              <div className="mini_box box7"></div>
+              <div className="mini_box box8"></div>
+              <div className="mini_box box1"></div>
+              <div className="mini_box box2"></div>
+              <div className="mini_box box3"></div>
+              <div className="mini_box box4"></div>
+              <div className="mini_box box5"></div>
+              <div className="mini_box box6"></div>
+              <div className="mini_box box7"></div>
+              <div className="mini_box box8"></div>
+            </motion.div>
+            <motion.div
+              className="courses_animation mdri"
+              initial={{ scale: 1.5 }}
+              whileInView={{ scale: 1 }}>
+              <div className="mini_box box5"></div>
+              <div className="mini_box box4"></div>
+              <div className="mini_box box2"></div>
+              <div className="mini_box box1"></div>
+              <div className="mini_box box3"></div>
+              <div className="mini_box box8"></div>
+              <div className="mini_box box6"></div>
+              <div className="mini_box box7"></div>
+              <div className="mini_box box1"></div>
+              <div className="mini_box box5"></div>
+              <div className="mini_box box3"></div>
+              <div className="mini_box box4"></div>
+              <div className="mini_box box6"></div>
+              <div className="mini_box box8"></div>
+              <div className="mini_box box7"></div>
+              <div className="mini_box box2"></div>
+            </motion.div>
+            <motion.div
+              className="courses_animation adri"
+              initial={{ scale: 1.5 }}
+              whileInView={{ scale: 1 }}>
+              <div className="mini_box box5"></div>
+              <div className="mini_box box3"></div>
+              <div className="mini_box box4"></div>
+              <div className="mini_box box2"></div>
+              <div className="mini_box box1"></div>
+              <div className="mini_box box8"></div>
+              <div className="mini_box box6"></div>
+              <div className="mini_box box2"></div>
+              <div className="mini_box box1"></div>
+              <div className="mini_box box2"></div>
+              <div className="mini_box box3"></div>
+              <div className="mini_box box4"></div>
+              <div className="mini_box box5"></div>
+              <div className="mini_box box1"></div>
+              <div className="mini_box box7"></div>
+              <div className="mini_box box4"></div>
+            </motion.div>
+          </div>
         </div>
         <div className="home__bottom">
-          {/*  <div className="prof-carousel-contanier">
-            <div className="prof-carousel">
-              <p>Aaron Rababh</p>
-              <p>mohd jasim</p>
-              <p>Hussain osa</p>
-            </div>
-            <div className="prof-carousel">
-              <p>Aaron Rababh</p>
-              <p>mohd jasim</p>
-              <p>Hussain osa</p>
-            </div>
-            <div className="prof-carousel">
-              <p>Aaron Rababh</p>
-              <p>mohd jasim</p>
-              <p>Hussain osa</p>
-            </div>
-          </div> */}
           <Professors />
         </div>
       </div>

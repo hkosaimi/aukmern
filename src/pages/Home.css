@@ -104,14 +104,25 @@
 
 .home__middle {
   margin-top: 20px;
-  padding: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-left: -40px;
+
   margin-bottom: 90px;
 }
-.courses_animation {
+.home__middle-top {
+  color: #fff;
+  padding: 2rem 2rem;
 }
+.home__middle-top h1 {
+  font-family: "Poppins";
+  line-height: 35px;
+  text-align: center;
+  text-shadow: 10px 10px 20px #000;
+}
+.courses_container {
+  margin-left: -40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .mini_box {
   overflow: hidden;
   display: inline-block;
