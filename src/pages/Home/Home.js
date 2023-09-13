@@ -1,6 +1,6 @@
 import "./Home.css";
 import { motion } from "framer-motion";
-import Professors from "../components/Professors/Professors";
+import Professors from "../../components/Professors/Professors";
 
 function Home() {
   return (

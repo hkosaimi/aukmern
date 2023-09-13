@@ -1,6 +1,7 @@
 import "./Signup.css";
 import { useState } from "react";
 import { useSignup } from "../../hooks/useSignup";
+import { Link } from "react-router-dom";
 
 function Signup() {
   const [username, setUsername] = useState("");
@@ -13,7 +14,6 @@ function Signup() {
     e.preventDefault();
     await signup(username, email, password);
   };
-  console.log(error);
   return (
     <>
       <div className="signup">
@@ -41,6 +41,13 @@ function Signup() {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
             />
+            <div className="checkbox">
+              <input type="checkbox" />
+              <p>
+                I've read and agreed to the <Link>policy</Link>
+              </p>
+            </div>
+
             <button disabled={isLoading}>Signup</button>
             {error && <div className="error">{error}</div>}
           </form>

@@ -144,31 +144,31 @@
 }
 
 .box1 {
-  background-image: url("../assets/eleg.jpg");
+  background-image: url("../../assets/eleg.jpg");
 }
 
 .box2 {
-  background-image: url("../assets/phy.jpg");
+  background-image: url("../../assets/phy.jpg");
   background-position: 35% 35% !important;
 }
 .box3 {
-  background-image: url("../assets/cpeg210.jpg");
+  background-image: url("../../assets/cpeg210.jpg");
 }
 .box4 {
-  background-image: url("../assets/ch.jpg");
+  background-image: url("../../assets/ch.jpg");
 }
 .box5 {
-  background-image: url("../assets/calc.jpg");
+  background-image: url("../../assets/calc.jpg");
   background-position: top !important;
 }
 .box6 {
-  background-image: url("../assets/phys.jpg");
+  background-image: url("../../assets/phys.jpg");
 }
 .box7 {
-  background-image: url("../assets/recent3.jpg");
+  background-image: url("../../assets/recent3.jpg");
 }
 .box8 {
-  background-image: url("../assets/csis230.jpg");
+  background-image: url("../../assets/csis230.jpg");
 }
 
 .mdri {
