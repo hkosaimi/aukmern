@@ -22,6 +22,18 @@
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
 }
+.prof-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+}
+.prof-top p {
+  background: rgb(245, 22, 22);
+  padding: 2px 5px;
+  font-size: 12px;
+  border-radius: 7px;
+}
 
 .prof-top-left,
 .prof-bottom-right {
@@ -71,7 +83,7 @@
 }
 
 .prof_middle h1 {
-  background: -webkit-linear-gradient(45deg, #383737, #4b4646);
+  background: -webkit-linear-gradient(45deg, #222121, #615a5a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Pirata One";
@@ -92,7 +104,16 @@
 .prof_bottom svg {
   color: #383737;
 }
+.prof-heading {
+  padding: 2rem 2rem;
+}
 
+.prof-heading h1 {
+  font-family: "Poppins";
+  line-height: 35px;
+  text-align: center;
+  text-shadow: 10px 10px 20px #000;
+}
 @keyframes animate {
   0% {
     transform: translateX(0%);

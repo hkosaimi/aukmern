@@ -2,10 +2,13 @@ import "./Professors.css";
 import { GiClubs, GiSpades, GiHearts, GiDiamonds } from "react-icons/gi";
 import { AiTwotoneStar, AiOutlineStar } from "react-icons/ai";
 
-const Prof = ({ letter, icon, name, stars }) => {
+const Prof = ({ major, letter, icon, name, stars }) => {
   return (
     <>
       <div className="prof">
+        <div className="prof-top">
+          <p>{major}</p>
+        </div>
         <div className="prof-top-left">
           <h1>{letter}</h1>
           {icon}
@@ -72,20 +75,24 @@ const Prof = ({ letter, icon, name, stars }) => {
 function Professors() {
   return (
     <>
+      <div className="prof-heading">
+        <h1>A record of our rated professors based on your vote</h1>
+      </div>
+
       <div className="professor">
         <div className="prof-container">
-          <Prof letter="A" icon={<GiClubs />} name="Aaron Rababah" stars={5} />
-          <Prof letter="J" icon={<GiHearts />} name="Ahmad Meliod" stars={4} />
-          <Prof letter="A" icon={<GiSpades />} name="Mounib Khanfar" stars={5} />
-          <Prof letter="2" icon={<GiDiamonds />} name="Mutlaq Almutairi" stars={1} />
-          <Prof letter="N" icon={<GiClubs />} name="Ali Alzuabi" stars={3} />
+          <Prof major="CSIS" letter="A" icon={<GiClubs />} name="Aaron Rababah" stars={5} />
+          <Prof major="ARAB" letter="J" icon={<GiHearts />} name="Ahmad Meliod" stars={4} />
+          <Prof major="CPEG" letter="A" icon={<GiSpades />} name="Mounib Khanfar" stars={5} />
+          <Prof major="MATH" letter="2" icon={<GiDiamonds />} name="Mutlaq Almutairi" stars={1} />
+          <Prof major="PHYS" letter="J" icon={<GiClubs />} name="Ali Alzuabi" stars={3} />
         </div>
         <div className="prof-container">
-          <Prof letter="A" icon={<GiClubs />} name="Aaron Rababah" stars={5} />
-          <Prof letter="J" icon={<GiHearts />} name="Ahmad Meliod" stars={4} />
-          <Prof letter="A" icon={<GiSpades />} name="Mounib Khanfar" stars={5} />
-          <Prof letter="2" icon={<GiDiamonds />} name="Mutlaq Almutairi" stars={1} />
-          <Prof letter="N" icon={<GiClubs />} name="Ali Alzuabi" stars={3} />
+          <Prof major="CSIS" letter="A" icon={<GiClubs />} name="Aaron Rababah" stars={5} />
+          <Prof major="ARAB" letter="J" icon={<GiHearts />} name="Ahmad Meliod" stars={4} />
+          <Prof major="CPEG" letter="A" icon={<GiSpades />} name="Mounib Khanfar" stars={5} />
+          <Prof major="MATH" letter="2" icon={<GiDiamonds />} name="Mutlaq Almutairi" stars={1} />
+          <Prof major="PHYS" letter="J" icon={<GiClubs />} name="Ali Alzuabi" stars={3} />
         </div>
       </div>
     </>
