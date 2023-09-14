@@ -19,10 +19,9 @@ function Home() {
     style = {
       translate: "0 -10px",
       opacity: 1,
-      transition: "all 0.5s linear",
+      transition: "all 0.8s",
     };
   }
-  console.log(style);
   return (
     <>
       <div className="home">

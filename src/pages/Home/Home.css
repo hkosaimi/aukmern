@@ -119,7 +119,6 @@
   text-shadow: 10px 10px 20px #000;
 }
 .courses_container {
-  margin-left: -40px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -204,7 +203,15 @@
   width: 350px;
   height: 350px;
 }
-
+.courses_animation:nth-child(1) {
+  margin-left: -50px;
+}
+.courses_animation:nth-child(2) {
+  margin-left: -40px;
+}
+.courses_animation:nth-child(3) {
+  margin-left: -32px;
+}
 @keyframes animaste {
   0% {
     transform: translateX(0%);

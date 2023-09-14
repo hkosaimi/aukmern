@@ -1,7 +1,8 @@
 import "./Professors.css";
 import { GiClubs, GiSpades, GiHearts, GiDiamonds } from "react-icons/gi";
 import { AiTwotoneStar, AiOutlineStar } from "react-icons/ai";
-
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 const Prof = ({ major, letter, icon, name, stars }) => {
   return (
     <>
@@ -73,10 +74,27 @@ const Prof = ({ major, letter, icon, name, stars }) => {
 };
 
 function Professors() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  let style = {
+    opacity: 0,
+    translate: "0 20px",
+    marginBottom: 0,
+  };
+  if (isInView) {
+    style = {
+      translate: "0 -10px",
+      opacity: 1,
+      transition: "all 0.8s",
+    };
+  }
   return (
     <>
       <div className="prof-heading">
-        <h1>A record of our rated professors based on your vote</h1>
+        <h1 ref={ref} style={style}>
+          A record of our rated professors based on your vote
+        </h1>
       </div>
 
       <div className="professor">

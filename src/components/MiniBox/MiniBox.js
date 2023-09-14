@@ -7,7 +7,7 @@ const BoxTemplate = ({ order }) => {
       <>
         <motion.div
           className="courses_animation"
-          initial={{ scale: 1.5 }}
+          initial={{ scale: 1.2 }}
           whileInView={{ scale: 1 }}>
           <div className={`mini_box box1`}></div>
           <div className={`mini_box box2`}></div>
@@ -24,7 +24,7 @@ const BoxTemplate = ({ order }) => {
       <>
         <motion.div
           className="courses_animation"
-          initial={{ scale: 1.5 }}
+          initial={{ scale: 1.2 }}
           whileInView={{ scale: 1 }}>
           <div className={`mini_box box6`}></div>
           <div className={`mini_box box5`}></div>
@@ -41,7 +41,7 @@ const BoxTemplate = ({ order }) => {
       <>
         <motion.div
           className="courses_animation"
-          initial={{ scale: 1.5 }}
+          initial={{ scale: 1.2 }}
           whileInView={{ scale: 1 }}>
           <div className={`mini_box box2`}></div>
           <div className={`mini_box box1`}></div>
@@ -62,7 +62,6 @@ function MiniBox() {
         <BoxTemplate order={1} />
         <BoxTemplate order={2} />
         <BoxTemplate order={3} />
-        <BoxTemplate order={1} />
       </div>
     </>
   );
