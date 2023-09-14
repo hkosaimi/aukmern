@@ -41,12 +41,11 @@ function Signup() {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
             />
-            <div className="checkbox">
-              <input type="checkbox" />
-              <p>
-                I've read and agreed to the <Link>policy</Link>
-              </p>
-            </div>
+
+            <p>
+              By signing up you agree to AUKNOTES's <Link>terms</Link> and <Link>conditions</Link>{" "}
+              and confirm that you have read and understand the privacy policy
+            </p>
 
             <button disabled={isLoading}>Signup</button>
             {error && <div className="error">{error}</div>}
