@@ -227,31 +227,23 @@
 }
 .home__right div {
   position: absolute;
-
   background: rgb(208, 103, 232);
-  width: 180px;
-  height: 180px;
-  animation: bob 3s ease-out infinite;
-  left: 125px;
-  top: 1px;
+  animation: bob 3s ease-out infinite alternate-reverse;
+  left: 120px;
+  top: -40px;
   z-index: -1;
   border-radius: 50%;
+  width: 170px;
+  height: 170px;
 }
 @keyframes bob {
   from {
-    /*     filter: brightness(0);
- */
-    filter: blur(0px);
-    width: 0px;
-    height: 0px;
-    left: 210px;
-    top: 70px;
+    filter: blur(10px);
+    opacity: 0.099;
   }
   to {
-    /* filter: brightness(0.2); */
     filter: blur(50px);
-    width: 180px;
-    height: 180px;
+    opacity: 1;
   }
 }
 .courses_animation:nth-child(1) {
