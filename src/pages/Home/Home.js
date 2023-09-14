@@ -1,7 +1,8 @@
 import "./Home.css";
-import { motion } from "framer-motion";
 import Professors from "../../components/Professors/Professors";
 import Box from "../../assets/box.png";
+import MiniBox from "../../components/MiniBox/MiniBox";
+import { motion } from "framer-motion";
 function Home() {
   return (
     <>
@@ -41,73 +42,14 @@ function Home() {
 
         <div className="home__middle">
           <div className="home__middle-top">
-            <h1>We're providing a variety of resources to guide you throughout your semester</h1>
+            <motion.h1
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, translateY: "-20px" }}
+              style={{ transition: "opacity 10s", translateY: "0px" }}>
+              We're providing a variety of resources to guide you throughout your semester
+            </motion.h1>
           </div>
-          <div className="courses_container">
-            <motion.div
-              className="courses_animation"
-              initial={{ scale: 2 }}
-              whileInView={{ scale: 1 }}>
-              <span className="mini_box box1"></span>
-              <div className="mini_box box2"></div>
-              <div className="mini_box box3"></div>
-              <div className="mini_box box4"></div>
-              <div className="mini_box box5"></div>
-              <div className="mini_box box6"></div>
-              <div className="mini_box box7"></div>
-              <div className="mini_box box8"></div>
-              <div className="mini_box box1"></div>
-              <div className="mini_box box2"></div>
-              <div className="mini_box box3"></div>
-              <div className="mini_box box4"></div>
-              <div className="mini_box box5"></div>
-              <div className="mini_box box6"></div>
-              <div className="mini_box box7"></div>
-              <div className="mini_box box8"></div>
-            </motion.div>
-            <motion.div
-              className="courses_animation mdri"
-              initial={{ scale: 1.5 }}
-              whileInView={{ scale: 1 }}>
-              <div className="mini_box box5"></div>
-              <div className="mini_box box4"></div>
-              <div className="mini_box box2"></div>
-              <div className="mini_box box1"></div>
-              <div className="mini_box box3"></div>
-              <div className="mini_box box8"></div>
-              <div className="mini_box box6"></div>
-              <div className="mini_box box7"></div>
-              <div className="mini_box box1"></div>
-              <div className="mini_box box5"></div>
-              <div className="mini_box box3"></div>
-              <div className="mini_box box4"></div>
-              <div className="mini_box box6"></div>
-              <div className="mini_box box8"></div>
-              <div className="mini_box box7"></div>
-              <div className="mini_box box2"></div>
-            </motion.div>
-            <motion.div
-              className="courses_animation adri"
-              initial={{ scale: 1.5 }}
-              whileInView={{ scale: 1 }}>
-              <div className="mini_box box5"></div>
-              <div className="mini_box box3"></div>
-              <div className="mini_box box4"></div>
-              <div className="mini_box box2"></div>
-              <div className="mini_box box1"></div>
-              <div className="mini_box box8"></div>
-              <div className="mini_box box6"></div>
-              <div className="mini_box box2"></div>
-              <div className="mini_box box1"></div>
-              <div className="mini_box box2"></div>
-              <div className="mini_box box3"></div>
-              <div className="mini_box box4"></div>
-              <div className="mini_box box5"></div>
-              <div className="mini_box box1"></div>
-              <div className="mini_box box7"></div>
-              <div className="mini_box box4"></div>
-            </motion.div>
-          </div>
+          <MiniBox />
         </div>
         <div className="home__bottom">
           <Professors />
