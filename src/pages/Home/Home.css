@@ -228,10 +228,10 @@
 .home__right div {
   position: absolute;
 
-  background: rgb(255, 255, 255);
+  background: rgb(208, 103, 232);
   width: 180px;
   height: 180px;
-  animation: bob 2s linear infinite;
+  animation: bob 3s ease-out infinite;
   left: 125px;
   top: 1px;
   z-index: -1;
@@ -242,10 +242,16 @@
     /*     filter: brightness(0);
  */
     filter: blur(0px);
+    width: 0px;
+    height: 0px;
+    left: 210px;
+    top: 70px;
   }
   to {
     /* filter: brightness(0.2); */
-    filter: blur(100px);
+    filter: blur(50px);
+    width: 180px;
+    height: 180px;
   }
 }
 .courses_animation:nth-child(1) {
