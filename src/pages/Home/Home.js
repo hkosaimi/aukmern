@@ -45,7 +45,7 @@ function Home() {
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, translateY: "-20px" }}
-              style={{ transition: "opacity 10s", translateY: "0px" }}>
+              style={{ translateY: "20px" }}>
               We're providing a variety of resources to guide you throughout your semester
             </motion.h1>
           </div>
