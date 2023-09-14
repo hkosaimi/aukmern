@@ -1,0 +1,11 @@
+.footer {
+  background: #000;
+  color: #ffffff83;
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer span {
+  color: #fff;
+}

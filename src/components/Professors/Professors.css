@@ -14,46 +14,51 @@
 
 .prof {
   margin-left: 20px;
-  width: 170px;
-  height: 220px;
-  background: #2a2929;
+  width: 120px;
+  height: 170px;
+  background: linear-gradient(45deg, #eee, #8d8383);
   border-radius: 10px;
   position: relative;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 
-.prof_top-left,
-.prof_top-right {
-  background: linear-gradient(90deg, #907b01 0%, #bca001 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.prof-top-left,
+.prof-bottom-right {
+  color: #383737;
   display: flex;
   position: absolute;
   flex-direction: column;
   align-items: center;
 }
-.prof_top-left svg {
-  width: 25px;
-  height: 25px;
-  margin-top: 3px;
-  color: #907b01;
+
+.prof-bottom-right svg {
+  width: 20px;
+  height: 20px;
 }
-.prof_top-right {
+.prof-top-left svg {
+  width: 20px;
+  height: 20px;
+}
+.prof-top-left h1 {
+  font-size: 30px;
+}
+.prof-bottom-right h1 {
+  font-size: 30px;
+}
+
+.prof-top-left svg {
+  margin-top: 3px;
+}
+.prof-bottom-right {
   right: 0;
   bottom: 0;
 }
-.prof_top-right h1 {
+.prof-bottom-right h1 {
   rotate: 180deg;
   margin-top: 3px;
-  background: linear-gradient(90deg, #907b01 0%, #bca001 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
-.prof_top-right svg {
-  width: 25px;
-  height: 25px;
-  color: #907b01;
+.prof-bottom-right svg {
   transform: rotate(180deg);
 }
 
@@ -66,14 +71,12 @@
 }
 
 .prof_middle h1 {
-  background: -webkit-linear-gradient(45deg, #eee, #8d8383);
+  background: -webkit-linear-gradient(45deg, #383737, #4b4646);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Pirata One";
   line-height: 30px;
-  font-size: 35px;
-  /*   text-shadow: 0px 30px 50px #000;
- */
+  font-size: 25px;
 }
 
 .prof_bottom {
@@ -86,8 +89,11 @@
   bottom: 0;
   font-size: 14px;
 }
+.prof_bottom svg {
+  color: #383737;
+}
 
-@keyframes animsate {
+@keyframes animate {
   0% {
     transform: translateX(0%);
   }

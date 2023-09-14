@@ -6,11 +6,11 @@ const Prof = ({ letter, icon, name, stars }) => {
   return (
     <>
       <div className="prof">
-        <div className="prof_top-left">
+        <div className="prof-top-left">
           <h1>{letter}</h1>
           {icon}
         </div>
-        <div className="prof_top-right">
+        <div className="prof-bottom-right">
           {icon}
           <h1>{letter}</h1>
         </div>
@@ -73,6 +73,13 @@ function Professors() {
   return (
     <>
       <div className="professor">
+        <div className="prof-container">
+          <Prof letter="A" icon={<GiClubs />} name="Aaron Rababah" stars={5} />
+          <Prof letter="J" icon={<GiHearts />} name="Ahmad Meliod" stars={4} />
+          <Prof letter="A" icon={<GiSpades />} name="Mounib Khanfar" stars={5} />
+          <Prof letter="2" icon={<GiDiamonds />} name="Mutlaq Almutairi" stars={1} />
+          <Prof letter="N" icon={<GiClubs />} name="Ali Alzuabi" stars={3} />
+        </div>
         <div className="prof-container">
           <Prof letter="A" icon={<GiClubs />} name="Aaron Rababah" stars={5} />
           <Prof letter="J" icon={<GiHearts />} name="Ahmad Meliod" stars={4} />

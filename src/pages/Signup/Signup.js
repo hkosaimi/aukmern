@@ -43,8 +43,9 @@ function Signup() {
             />
 
             <p>
-              By signing up you agree to AUKNOTES's <Link>terms</Link> and <Link>conditions</Link>{" "}
-              and confirm that you have read and understand the privacy policy
+              By signing up you agree to AUKNOTES's <Link to="/">terms</Link> and{" "}
+              <Link>conditions</Link> and confirm that you have read and understand the privacy
+              policy
             </p>
 
             <button disabled={isLoading}>Signup</button>
