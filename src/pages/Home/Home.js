@@ -3,7 +3,26 @@ import Professors from "../../components/Professors/Professors";
 import Box from "../../assets/box.png";
 import MiniBox from "../../components/MiniBox/MiniBox";
 import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+
 function Home() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  let style = {
+    opacity: 0,
+    translate: "0 20px",
+    marginBottom: 0,
+  };
+  if (isInView) {
+    style = {
+      translate: "0 -10px",
+      opacity: 1,
+      transition: "all 0.5s linear",
+    };
+  }
+  console.log(style);
   return (
     <>
       <div className="home">
@@ -42,12 +61,9 @@ function Home() {
 
         <div className="home__middle">
           <div className="home__middle-top">
-            <motion.h1
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, translateY: "-20px" }}
-              style={{ translateY: "20px" }}>
+            <h1 ref={ref} style={style}>
               We're providing a variety of resources to guide you throughout your semester
-            </motion.h1>
+            </h1>
           </div>
           <MiniBox />
         </div>
