@@ -26,12 +26,12 @@ const BoxTemplate = ({ order }) => {
           className="courses_animation"
           initial={{ scale: 1.2 }}
           whileInView={{ scale: 1 }}>
-          <div className={`mini_box box6`}></div>
-          <div className={`mini_box box5`}></div>
-          <div className={`mini_box box4`}></div>
-          <div className={`mini_box box3`}></div>
-          <div className={`mini_box box2`}></div>
-          <div className={`mini_box box1`}></div>
+          <div className={`mini_box box7`}></div>
+          <div className={`mini_box box8`}></div>
+          <div className={`mini_box box9`}></div>
+          <div className={`mini_box box10`}></div>
+          <div className={`mini_box box11`}></div>
+          <div className={`mini_box box12`}></div>
         </motion.div>
       </>
     );
@@ -43,12 +43,12 @@ const BoxTemplate = ({ order }) => {
           className="courses_animation"
           initial={{ scale: 1.2 }}
           whileInView={{ scale: 1 }}>
-          <div className={`mini_box box2`}></div>
-          <div className={`mini_box box1`}></div>
-          <div className={`mini_box box6`}></div>
-          <div className={`mini_box box8`}></div>
-          <div className={`mini_box box7`}></div>
-          <div className={`mini_box box3`}></div>
+          <div className={`mini_box box13`}></div>
+          <div className={`mini_box box14`}></div>
+          <div className={`mini_box box15`}></div>
+          <div className={`mini_box box16`}></div>
+          <div className={`mini_box box17`}></div>
+          <div className={`mini_box box18`}></div>
         </motion.div>
       </>
     );

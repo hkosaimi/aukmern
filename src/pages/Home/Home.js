@@ -2,9 +2,8 @@ import "./Home.css";
 import Professors from "../../components/Professors/Professors";
 import Box from "../../assets/box.png";
 import MiniBox from "../../components/MiniBox/MiniBox";
-import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 function Home() {
   const ref = useRef(null);
@@ -22,6 +21,7 @@ function Home() {
       transition: "all 0.8s",
     };
   }
+
   return (
     <>
       <div className="home">
@@ -37,6 +37,7 @@ function Home() {
               <button>Explore</button>
             </div>
             <div className="home__right">
+              <div></div>
               <img src={Box} />
             </div>
           </div>

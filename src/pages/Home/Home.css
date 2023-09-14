@@ -162,15 +162,34 @@
   background-position: top !important;
 }
 .box6 {
-  background-image: url("../../assets/phys.jpg");
+  background-image: url("../../assets/statistics.jpg");
+  background-position: top !important;
 }
 .box7 {
-  background-image: url("../../assets/recent3.jpg");
+  background-image: url("../../assets/java.jpg");
 }
 .box8 {
-  background-image: url("../../assets/csis230.jpg");
+  background-image: url("../../assets/cpeg1.jpg");
 }
-
+.box9 {
+  background-image: url("../../assets/arab.jpg");
+}
+.box10 {
+  background-image: url("../../assets/hist.png");
+  background-position: top !important;
+}
+.box10 {
+  background-image: url("../../assets/gra.jpg");
+  background-position: 80px !important;
+}
+.box11 {
+  background-image: url("../../assets/hist2.jpg");
+  background-position: 0 0 !important;
+}
+.box11 {
+  background-image: url("../../assets/engl.jpg");
+  background-position: 0 -20px !important;
+}
 .mdri {
   margin-left: 20px;
 }
@@ -199,9 +218,35 @@
   margin-right: 20px;
 }
 
+.home__right {
+  position: relative;
+}
 .home__right img {
   width: 350px;
   height: 350px;
+}
+.home__right div {
+  position: absolute;
+
+  background: rgb(255, 255, 255);
+  width: 180px;
+  height: 180px;
+  animation: bob 2s linear infinite;
+  left: 125px;
+  top: 1px;
+  z-index: -1;
+  border-radius: 50%;
+}
+@keyframes bob {
+  from {
+    /*     filter: brightness(0);
+ */
+    filter: blur(0px);
+  }
+  to {
+    /* filter: brightness(0.2); */
+    filter: blur(100px);
+  }
 }
 .courses_animation:nth-child(1) {
   margin-left: -50px;
