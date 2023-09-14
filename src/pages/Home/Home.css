@@ -224,6 +224,7 @@
 .home__right img {
   width: 350px;
   height: 300px;
+  filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.5));
 }
 .home__right div {
   position: absolute;
