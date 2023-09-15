@@ -13,9 +13,8 @@ function Card() {
             <div className="imgs_container">
               <img className="news4" src={news4} />
               <motion.img
-                initial={{ translate: "0 0" }}
                 whileInView={{ translate: ["0 -10px", "0 1px"] }}
-                transition={{ type: "spring", bounce: 0.5, duration: 3 }}
+                transition={{ type: "tween", duration: 2 }}
                 className="news4_1"
                 src={news4_1}
               />
