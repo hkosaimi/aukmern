@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aukmern/static/css/main.25115e73.css",
-    "main.js": "/aukmern/static/js/main.2d95b899.js",
+    "main.css": "/aukmern/static/css/main.fc37ce3b.css",
+    "main.js": "/aukmern/static/js/main.014c52d3.js",
     "static/media/hist.png": "/aukmern/static/media/hist.b16dd42e5981c315973d.png",
     "static/media/arab.jpg": "/aukmern/static/media/arab.9c1e5513cf20386c03ee.jpg",
     "static/media/phy.jpg": "/aukmern/static/media/phy.467647cb425d94649ffa.jpg",
@@ -20,11 +20,11 @@
     "static/media/logo.png": "/aukmern/static/media/logo.80de053078c2eec3f12f.png",
     "static/media/news4_1.png": "/aukmern/static/media/news4_1.d828cd7c508e7618a4ac.png",
     "index.html": "/aukmern/index.html",
-    "main.25115e73.css.map": "/aukmern/static/css/main.25115e73.css.map",
-    "main.2d95b899.js.map": "/aukmern/static/js/main.2d95b899.js.map"
+    "main.fc37ce3b.css.map": "/aukmern/static/css/main.fc37ce3b.css.map",
+    "main.014c52d3.js.map": "/aukmern/static/js/main.014c52d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.25115e73.css",
-    "static/js/main.2d95b899.js"
+    "static/css/main.fc37ce3b.css",
+    "static/js/main.014c52d3.js"
   ]
 }
