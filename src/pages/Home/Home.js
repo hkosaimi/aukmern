@@ -8,7 +8,7 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Card from "../../components/Card/Card";
 import { useScroll } from "framer-motion";
-import Test from "../../components/Test";
+
 function Home() {
   const { scrollYProgress } = useScroll();
   const ref = useRef(null);
