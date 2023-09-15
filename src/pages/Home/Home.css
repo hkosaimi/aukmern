@@ -9,6 +9,7 @@
   flex-direction: column;
   row-gap: 100px;
 }
+
 .home__top__first h1 {
   font-family: "Inter";
   font-size: 50px;
@@ -53,6 +54,7 @@
   border-radius: 20px;
   height: 300px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+  position: relative;
 }
 
 .card h2 {
@@ -250,11 +252,16 @@
   flex-direction: row;
   align-items: center;
 }
+.news h2 {
+  width: 80%;
+}
 
 .imgs_container {
-  position: relative;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
   width: 100px;
-  height: 60px;
+  height: 49px;
 }
 
 .news4 {
@@ -269,8 +276,8 @@
   position: absolute;
   width: 38px;
   height: 40px;
-  left: 6.5px;
-  top: 15px;
+  left: 50px;
+  top: 7px;
   z-index: 1;
 }
 .news4_2 {
@@ -278,8 +285,8 @@
   width: 12px;
   height: 3px;
   position: absolute;
-  left: 21px;
-  top: 13.5px;
+  left: 68px;
+  top: 5px;
 }
 
 .courses_animation:nth-child(1) {

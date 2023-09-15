@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import news4 from "../../assets/news4.png";
 import news4_1 from "../../assets/news4_1.png";
 import news4_2 from "../../assets/news4_2.png";
-import Newsletter from "../Animated/Newsletter";
 function Card() {
   return (
     <>
@@ -11,7 +10,17 @@ function Card() {
         <div className="card">
           <div className="news">
             <h2>Use our website to enhance your learning process.</h2>
-            <Newsletter />
+            <div className="imgs_container">
+              <img className="news4" src={news4} />
+              <motion.img
+                initial={{ translate: "0 0" }}
+                whileInView={{ translate: ["0 -10px", "0 1px"] }}
+                transition={{ type: "spring", duration: 3 }}
+                className="news4_1"
+                src={news4_1}
+              />
+              <img className="news4_2" src={news4_2} />
+            </div>
           </div>
           <p>
             Before you can view and participate in the website, you need to signup with you AUK
