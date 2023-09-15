@@ -144,50 +144,50 @@
 }
 
 .box1 {
-  background-image: url("../../assets/eleg.jpg");
+  background-image: url("../../assets/courses/eleg.jpg");
 }
 
 .box2 {
-  background-image: url("../../assets/phy.jpg");
+  background-image: url("../../assets/courses/phy.jpg");
   background-position: 35% 35% !important;
 }
 .box3 {
-  background-image: url("../../assets/cpeg210.jpg");
+  background-image: url("../../assets/courses/cpeg210.jpg");
 }
 .box4 {
-  background-image: url("../../assets/ch.jpg");
+  background-image: url("../../assets/courses/ch.jpg");
 }
 .box5 {
-  background-image: url("../../assets/calc.jpg");
+  background-image: url("../../assets/courses/calc.jpg");
   background-position: top !important;
 }
 .box6 {
-  background-image: url("../../assets/statistics.jpg");
+  background-image: url("../../assets/courses/statistics.jpg");
   background-position: top !important;
 }
 .box7 {
-  background-image: url("../../assets/java.jpg");
+  background-image: url("../../assets/courses/java.jpg");
 }
 .box8 {
-  background-image: url("../../assets/cpeg1.jpg");
+  background-image: url("../../assets/courses/cpeg1.jpg");
 }
 .box9 {
-  background-image: url("../../assets/arab.jpg");
+  background-image: url("../../assets/courses/arab.jpg");
 }
 .box10 {
-  background-image: url("../../assets/hist.png");
+  background-image: url("../../assets/courses/hist.png");
   background-position: top !important;
 }
 .box10 {
-  background-image: url("../../assets/gra.jpg");
+  background-image: url("../../assets/courses/gra.jpg");
   background-position: 80px !important;
 }
 .box11 {
-  background-image: url("../../assets/hist2.jpg");
+  background-image: url("../../assets/courses/hist2.jpg");
   background-position: 0 0 !important;
 }
 .box11 {
-  background-image: url("../../assets/engl.jpg");
+  background-image: url("../../assets/courses/engl.jpg");
   background-position: 0 -20px !important;
 }
 .mdri {
@@ -247,6 +247,27 @@
     opacity: 1;
   }
 }
+
+.news {
+  display: flex;
+}
+.news h2 {
+}
+
+.news img {
+  width: 50px;
+  height: 40px;
+}
+.news3 {
+  z-index: 2;
+}
+.part {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: -50px;
+}
+
 .courses_animation:nth-child(1) {
   margin-left: -50px;
 }

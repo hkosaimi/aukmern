@@ -4,6 +4,9 @@ import Box from "../../assets/box.png";
 import MiniBox from "../../components/MiniBox/MiniBox";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
+import news3 from "../../assets/news3.png";
+import news3_1 from "../../assets/news3_1.png";
+import { motion } from "framer-motion";
 
 function Home() {
   const ref = useRef(null);
@@ -44,7 +47,15 @@ function Home() {
           <div className="home__top__second">
             <div className="home__top__second--card-container">
               <div className="card">
-                <h2>Use our website to enhance your learning process.</h2>
+                <div className="news">
+                  <h2>Use our website to enhance your learning process.</h2>
+                  <motion.img
+                    initial={{ translate: "-200px 0", opacity: 0 }}
+                    whileInView={{ translate: "10px 0", opacity: 1 }}
+                    className="news3"
+                    src={news3}
+                  />
+                </div>
                 <p>
                   Before you can view and participate in the website, you need to signup with you
                   AUK email, to ensure that only students can have access to experince the full,
