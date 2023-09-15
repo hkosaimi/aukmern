@@ -4,11 +4,13 @@ import Box from "../../assets/box.png";
 import MiniBox from "../../components/MiniBox/MiniBox";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import news3 from "../../assets/news3.png";
-import news3_1 from "../../assets/news3_1.png";
-import { motion } from "framer-motion";
 
+import { motion } from "framer-motion";
+import Card from "../../components/Card/Card";
+import { useScroll } from "framer-motion";
+import Test from "../../components/Test";
 function Home() {
+  const { scrollYProgress } = useScroll();
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -45,28 +47,7 @@ function Home() {
             </div>
           </div>
           <div className="home__top__second">
-            <div className="home__top__second--card-container">
-              <div className="card">
-                <div className="news">
-                  <h2>Use our website to enhance your learning process.</h2>
-                  <motion.img
-                    initial={{ translate: "-200px 0", opacity: 0 }}
-                    whileInView={{ translate: "10px 0", opacity: 1 }}
-                    className="news3"
-                    src={news3}
-                  />
-                </div>
-                <p>
-                  Before you can view and participate in the website, you need to signup with you
-                  AUK email, to ensure that only students can have access to experince the full,
-                  unlimited features.
-                </p>
-                <div className="input-container">
-                  <input type="email" placeholder="Email"></input>
-                  <button>Submit</button>
-                </div>
-              </div>
-            </div>
+            <Card />
           </div>
         </div>
 

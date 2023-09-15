@@ -250,6 +250,8 @@
 
 .news {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .news h2 {
 }
@@ -258,14 +260,23 @@
   width: 50px;
   height: 40px;
 }
-.news3 {
+.news4 {
   z-index: 2;
 }
-.part {
-  width: 100px;
-  height: 100px;
+.news4_1 {
   position: relative;
-  left: -50px;
+  left: -43.1px;
+  top: -7px;
+  scale: 1.07 1;
+  z-index: 1;
+}
+.news4_2 {
+  z-index: 0;
+  width: 12px !important;
+  height: 3px !important;
+  position: relative;
+  left: -67px;
+  top: -10px;
 }
 
 .courses_animation:nth-child(1) {
