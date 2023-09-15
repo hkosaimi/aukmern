@@ -10,20 +10,17 @@ function Card() {
         <div className="card">
           <div className="news">
             <h2>Use our website to enhance your learning process.</h2>
-            <img
-              /*  initial={{ translate: "-200px 0", opacity: 0 }}
-              whileInView={{ translate: "10px 0", opacity: 1 }} */
-              className="news4"
-              src={news4}
-            />
-            <motion.img
-              initial={{ translate: "0 -1px" }}
-              whileInView={{ translate: "0 -10px" }}
-              transition={{ type: "spring", duration: 3 }}
-              className="news4_1"
-              src={news4_1}
-            />
-            <img className="news4_2" src={news4_2} />
+            <div className="imgs_container">
+              <img className="news4" src={news4} />
+              <motion.img
+                initial={{ translate: "0 0" }}
+                whileInView={{ translate: ["0 -10px", "0 1px"] }}
+                transition={{ type: "spring", duration: 3 }}
+                className="news4_1"
+                src={news4_1}
+              />
+              <img className="news4_2" src={news4_2} />
+            </div>
           </div>
           <p>
             Before you can view and participate in the website, you need to signup with you AUK
