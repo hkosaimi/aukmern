@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aukmern/static/css/main.ab4761fe.css",
-    "main.js": "/aukmern/static/js/main.e5b70d10.js",
+    "main.css": "/aukmern/static/css/main.a3fea32a.css",
+    "main.js": "/aukmern/static/js/main.ad3a48e7.js",
     "static/media/hist.png": "/aukmern/static/media/hist.b16dd42e5981c315973d.png",
     "static/media/arab.jpg": "/aukmern/static/media/arab.9c1e5513cf20386c03ee.jpg",
     "static/media/phy.jpg": "/aukmern/static/media/phy.467647cb425d94649ffa.jpg",
@@ -16,13 +16,15 @@
     "static/media/cpeg1.jpg": "/aukmern/static/media/cpeg1.f9f7b6528dd16803fde7.jpg",
     "static/media/gra.jpg": "/aukmern/static/media/gra.deedfb931d3f2463e8af.jpg",
     "static/media/statistics.jpg": "/aukmern/static/media/statistics.8e06bdbf15de3adf8fa1.jpg",
+    "static/media/news3.png": "/aukmern/static/media/news3.99e0a7543946904b030a.png",
     "static/media/logo.png": "/aukmern/static/media/logo.80de053078c2eec3f12f.png",
+    "static/media/news3_1.png": "/aukmern/static/media/news3_1.39a95df86ff23b671bb5.png",
     "index.html": "/aukmern/index.html",
-    "main.ab4761fe.css.map": "/aukmern/static/css/main.ab4761fe.css.map",
-    "main.e5b70d10.js.map": "/aukmern/static/js/main.e5b70d10.js.map"
+    "main.a3fea32a.css.map": "/aukmern/static/css/main.a3fea32a.css.map",
+    "main.ad3a48e7.js.map": "/aukmern/static/js/main.ad3a48e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab4761fe.css",
-    "static/js/main.e5b70d10.js"
+    "static/css/main.a3fea32a.css",
+    "static/js/main.ad3a48e7.js"
   ]
 }
