@@ -10,7 +10,7 @@ import Card from "../../components/Card/Card";
 import { useScroll } from "framer-motion";
 
 function Home() {
-  const { scrollYProgress } = useScroll();
+  /* const { scrollYProgress } = useScroll();
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -23,9 +23,8 @@ function Home() {
     style = {
       translate: "0 -10px",
       opacity: 1,
-      transition: "all 0.8s",
     };
-  }
+  } */
 
   return (
     <>
@@ -53,9 +52,12 @@ function Home() {
 
         <div className="home__middle">
           <div className="home__middle-top">
-            <h1 ref={ref} style={style}>
+            <motion.h1
+              initial={{ opacity: 0, translate: "0 15px" }}
+              whileInView={{ opacity: 1, translate: "0 -10px" }}
+              transition={{ type: "tween", duration: 1 }}>
               We're providing a variety of resources to guide you throughout your semester
-            </h1>
+            </motion.h1>
           </div>
           <MiniBox />
         </div>

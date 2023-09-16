@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import news4 from "../../assets/news4.png";
 import news4_1 from "../../assets/news4_1.png";
 import news4_2 from "../../assets/news4_2.png";
+import "./Card.css";
 function Card() {
   return (
     <>

@@ -3,6 +3,7 @@ import { GiClubs, GiSpades, GiHearts, GiDiamonds } from "react-icons/gi";
 import { AiTwotoneStar, AiOutlineStar } from "react-icons/ai";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 const Prof = ({ major, letter, icon, name, stars }) => {
   return (
     <>
@@ -92,9 +93,12 @@ function Professors() {
   return (
     <>
       <div className="prof-heading">
-        <h1 ref={ref} style={style}>
+        <motion.h1
+          initial={{ opacity: 0, translate: "0 15px" }}
+          whileInView={{ opacity: 1, translate: "0 -10px" }}
+          transition={{ type: "tween", duration: 1 }}>
           A record of our rated professors based on your vote
-        </h1>
+        </motion.h1>
       </div>
 
       <div className="professor">
